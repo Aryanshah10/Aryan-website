@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:gainsboro;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#header-nav{
+    width:100%;
+    height: auto;
+    background-color:aqua;
+    
+}
+
+.img {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.navbar-brand{
+    
+    font-weight: bolder;
+    margin-left: 0px;
+}
+
+#headname{
+    font-family: 'Lato', sans-serif;
+    font-size:2em;
+    color: darkgreen;
+}
+
+.jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+    height:auto;
+    width: 100%;
+    margin:5px auto 5px auto;
+    background-color: brown;
+    margin-bottom: 40px;
+}
+
+#text1{
+    background-color: aliceblue;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    border:3px black solid;
+}
+
+.text{
+    
+    
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+#Ourprogram,#Members,#Account{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+
+.about{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    font-style: italic;
+    background-color: crimson;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px black solid ;
+    text-align: center;
+    color: white;
+    
+}
+
+#about{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    
+}
+
+#info{
+    margin-top: 20px;
+}
+
+#name2{
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: grey;
+    color: white;
+    opacity: .8;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#Ourprogram:hover, #Members:hover, #Account:hover {
+    box-shadow: 0 1px 5px 1px darkgreen;
+}
+
+#text1 a:hover, #text1 a:focus{
+    text-decoration: none;   
+    
+}
+
+#text1:hover{
+    background-color:darkorange;
+    color: white;
+    text-decoration-line: none;
+}
+
+.passwordbox{
+    background-color: bisque;
+    width:400px;
+    border: 2px black solid;   
+    padding: 5px;
+}
+
+.pass, .user{
+    display: inline;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #Account{
+    height:350px;
+  }
+}
+@media (max-width: 767px) {
+    .img {
+        background: url('./logo.png') no-repeat;
+        width: 80px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+      }
+
+    .navbar-brand{
+        font-size: 1.1em;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #Ourprogram,#Members,#Account {
+        width: 300px;
+        height: 200px;
+        margin: 0 auto 15px;
+      }
+
+    #headname{
+        
+        font-size:1.5em;
+        
+    }
+
+    .img { 
+        margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    #headname{    
+        font-size:1.2em;
+    }
+
+    .img { 
+        width:80px;
+        height: 100px;
+
+    }
+  }
+
+ #sheet{
+    height: 1000px;
+    width: 100%;
+ }
+
+ #textbox{
+    background-color: aliceblue;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    border:3px black solid;
+    margin: 20px;
+}
+
+.acctext{
+    font-size: large;
+    font-weight: bold;  
+    font-family: 'Lora', serif; 
+}
