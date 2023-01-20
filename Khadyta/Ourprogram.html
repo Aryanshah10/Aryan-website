@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesO.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        
+        <header>
+            <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+            <a href="index.html">
+                <div class="navbar-header">
+                <img class="img" src="image/logo.png" width="100px" height="120px">
+                
+                <div class="navbar-brand">
+                <h1 id="headname">KHADAYTA SAMAJ DUBAI</h1><h4 class="navbar-text">HOME</h4>
+            </div>
+        </a>    
+        </div>  
+            </div>
+            </nav>
+        </header>
+       
+        <div class="container" id="Maincon">
+            <center>
+                <a href="https://photos.app.goo.gl/D2acUB9z9g2jbpeJ6" target="_blank"><div id="text1">
+                    <span class="text">OUR RECENT PROGRAM: Khadayata Sports Day<br>December 25th</span>
+                </div></a>
+            </center>
+
+            <div class="imgc">
+                    <button onclick="previous()"><img src="./image/back.png" height="20px" width="20px"></button>
+                    <img class="image" src="https://lh3.googleusercontent.com/pG1gfXiUb52HW1sfp7HZu4qruZThBbuaRxj_sUtx6E6OZU8_WC6kcplsXUDd-ELYGPKsjUGfZ7ZZQQPFdgNQ7YnT40jG1c76MBxXWmVFFCZiOcqzJEre7KbKhYJ3dSAz73y3mgW4iiI=w600-h315-p-k">
+                    <button onclick="next()"><img src="./image/next.jpg" height="20px" width="20px"></button>
+
+                    <a href="https://photos.app.goo.gl/D2acUB9z9g2jbpeJ6" target="_blank"><div class="extra">
+                        <button>More Photos</button>
+                    </div>
+                    </a>
+            </div>
+
+            <center>
+                <a href="https://photos.app.goo.gl/BRfCrAh86aAGBFVT6" target="_blank"><div id="text1">
+                    <span class="text">OUR OTHER PROGRAM: <br></span>
+                </div></a>
+            </center>
+
+            <div class="imgc">
+                 
+                    <img class="image" src="https://lh3.googleusercontent.com/MYwlov_cMzrAfyghPfVYm3JDldF8q2vthRL0wtoONzUi1BOlLWWrTw6NCAE1rfcKu9kv7C7C6ozTstMIh0MhaY5opFlUM1AHfa-M9fkxPBVcdKYU2U7c5ZoYOR19LWrv-zn9LuGJC-U=w600-h315-p-k">
+                   
+                    <a href="https://photos.app.goo.gl/BRfCrAh86aAGBFVT6" target="_blank"><div class="extra">
+                        <button>More Photos</button></div></a>
+                    </div>
+            </div>            
+        </div>
+
+
+        <footer class="panel-footer">
+            <div class="container">
+              <div class="row">
+                <section id="info" class="col-sm-12">
+                    <div class="text-center"><h4>&copy; Khadayta samaj DUBAI</h4><br><h5>Created by Aryan Shah</h5></div>
+                  <hr class="visible-xs">
+                </section>
+            
+        </footer>
+
+        <script>
+
+            let images=["https://lh3.googleusercontent.com/pG1gfXiUb52HW1sfp7HZu4qruZThBbuaRxj_sUtx6E6OZU8_WC6kcplsXUDd-ELYGPKsjUGfZ7ZZQQPFdgNQ7YnT40jG1c76MBxXWmVFFCZiOcqzJEre7KbKhYJ3dSAz73y3mgW4iiI=w600-h315-p-k","https://lh3.googleusercontent.com/-SlWryX23UM5PIAVAVNR-qo4iZwFTBY8d5fos-09ht0XC48Ql0kwic2LY-MFsnq84EMK-cCRs42iMCGz2EYM1tJ9CuaBwuWL4wzHBEJ131LlCLcQ6cqBdBtFR7NjvJIt2d1srMvxMeY=w600-h315-p-k","https://lh3.googleusercontent.com/2zTXvGjOGk3TrYRer3mfFFQnLTHyGtG42BGcWwWLU7CuVX8ij3w_fCklM2atrZLVwj8WqWIRdKQb0JsQd-X57dpYGvfe8ipblMseG8ySOWF-u_wRxfBsYji2wHRcTbh8mZKk09M8z18=w600-h315-p-k"];
+    
+            let currentImage=0;
+    
+            function next()
+            {
+                if(currentImage<images.length-1)
+                {
+                    currentImage++;
+                }
+                else 
+                {
+                    currentImage=0;
+                }
+                
+                document.querySelector(".image").setAttribute("src",images[currentImage]);
+            }
+    
+    
+            function previous(){
+                if(currentImage>0)
+                {
+                    currentImage--;
+                }
+                else{
+                    currentImage=images.length-1;
+                }
+                
+                document.querySelector(".image").setAttribute("src",images[currentImage]);
+            }
+    
+    
+    
+        </script>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+   
+    </body>
+</html>
